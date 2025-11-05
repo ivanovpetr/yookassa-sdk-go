@@ -48,7 +48,7 @@ type Payment struct {
 	SavePaymentMethod bool `json:"save_payment_method,omitempty"`
 
 	// Payment method used for this payment.
-	PaymentMethod PaymentMethoder `json:"payment_method,omitempty"`
+	PaymentMethod PaymentMethoder `json:"payment_method_data,omitempty"`
 
 	// Time of order creation, based on UTC and specified in the ISO 8601 format.
 	// Example: 2017-11-03T11:52:31.827Z
