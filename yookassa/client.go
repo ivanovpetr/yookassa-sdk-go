@@ -20,9 +20,9 @@ type Client struct {
 	secretKey string
 }
 
-func NewClient(accountId string, secretKey string) *Client {
+func NewClient(accountId string, secretKey string, c http.Client) *Client {
 	return &Client{
-		client:    http.Client{},
+		client:    c,
 		accountId: accountId,
 		secretKey: secretKey,
 	}
